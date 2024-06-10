@@ -9,7 +9,7 @@ const overlay = document.querySelector('.overlay');
 const openFunction = function () {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
-}
+};
 
 for (let i = 0; i < open.length; i++)
     open[i].addEventListener('click', openFunction);
@@ -18,7 +18,7 @@ for (let i = 0; i < open.length; i++)
 const closeFunction = function () {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
-}
+};
 
 close.addEventListener('click', closeFunction);
 overlay.addEventListener('click', closeFunction);
@@ -26,4 +26,4 @@ document.addEventListener('keydown', function (press) {
     if (press.key === 'Escape' && !modal.classList.contains('hidden')) {
         closeFunction();
     }
-})
+});
